@@ -1,0 +1,1 @@
+Fonte do MVP recuperada do projeto Rota Livre e atualizada para a versão 4. Commit: 4951d3612b36f8eb5b3ec813a14096c1d61b04f6. A cópia em mvp omite a identidade de hospedagem e arquivos locais. O ZIP não contém credenciais nem banco de produção. Não foi criado um repositório GitHub.

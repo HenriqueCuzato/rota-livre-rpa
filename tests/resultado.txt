@@ -1,0 +1,21 @@
+test_conflito_id (test_regras.TestRegras.test_conflito_id) ... ok
+test_coordenadas_invalidas (test_regras.TestRegras.test_coordenadas_invalidas) ... ok
+test_duplicados (test_regras.TestRegras.test_duplicados) ... ok
+test_exportacao_mvp (test_regras.TestRegras.test_exportacao_mvp) ... ok
+test_id_categoria_status (test_regras.TestRegras.test_id_categoria_status) ... ok
+test_json_invalido_preserva_saida (test_regras.TestRegras.test_json_invalido_preserva_saida) ... Falha no lote (JSONDecodeError). Confira a entrada e repita.
+Falha no lote (ValueError). Confira a entrada e repita.
+ok
+test_lote_vazio (test_regras.TestRegras.test_lote_vazio) ... ok
+test_resolvida (test_regras.TestRegras.test_resolvida) ... ok
+test_ciclo_e_recuperacao (test_triagem.TestTriagem.test_ciclo_e_recuperacao) ... Falha no lote (FileNotFoundError). Confira a entrada e repita.
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
+1 registros processados. 1 alerta(s) ativo(s).
+4 registros processados. 1 alerta(s) ativo(s).
+4 registros processados. 1 alerta(s) ativo(s).
+4 registros processados. 0 alerta(s) ativo(s).

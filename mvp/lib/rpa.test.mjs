@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {parseRpa,rpaRows} from './rpa.ts';
+const initial=parseRpa(readFileSync(process.argv[2],'utf8'));
+assert.equal(initial.alertas.length,1);assert.equal(rpaRows(initial)[0].category,'Buraco');
+const empty=parseRpa(readFileSync(process.argv[3],'utf8'));assert.equal(empty.alertas.length,0);
+assert.throws(()=>parseRpa('{}'));
+assert.throws(()=>parseRpa(JSON.stringify({...initial,alertas:[initial.alertas[0],initial.alertas[0]]})));
+assert.throws(()=>parseRpa(JSON.stringify({...initial,alertas:[{...initial.alertas[0],lat:'-23'}]})));
+assert.throws(()=>parseRpa(JSON.stringify({...initial,alertas:[{...initial.alertas[0],status:'Resolvida'}]})));
+console.log('6 verificações de contrato Python → consumidor TypeScript: OK');

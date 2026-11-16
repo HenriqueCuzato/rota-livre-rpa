@@ -1,0 +1,1 @@
+Esta pasta é uma cópia do código do site para estudo e versionamento. Para executar apenas o RPA, use o README da pasta superior e o MVP publicado. A identidade do projeto hospedado foi removida. A execução local do MVP exige Node, instalação de dependências e criação do banco local conforme README.md; o banco não é o de produção.

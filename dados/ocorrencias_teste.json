@@ -1,0 +1,30 @@
+[
+  {
+    "id": "teste-1",
+    "category": "Buraco",
+    "status": "Registrada",
+    "lat": -23.5745,
+    "lng": -46.6228
+  },
+  {
+    "id": "teste-2",
+    "category": "Rampa obstruída",
+    "status": "Resolvida",
+    "lat": -23.5745,
+    "lng": -46.6228
+  },
+  {
+    "id": "teste-1",
+    "category": "Buraco",
+    "status": "Registrada",
+    "lat": -23.5745,
+    "lng": -46.6228
+  },
+  {
+    "id": "teste-3",
+    "category": "Buraco",
+    "status": "Registrada",
+    "lat": null,
+    "lng": -46.6228
+  }
+]

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+logs/*.jsonl
+painel/alertas_ativos.json
+dados/ocorrencias_mvp.json
+node_modules/
+dist/
+.wrangler/

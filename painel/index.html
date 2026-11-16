@@ -1,0 +1,21 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Rota Livre · Triagem</title>
+<style>body{font:1.2rem/1.6 system-ui;background:#f5f6ed;color:#123d36;max-width:800px;margin:6vh auto;padding:1rem}button{background:#155e48;color:white;padding:.7rem 1rem;border:0;border-radius:.4rem;font:inherit}li{margin:.8rem 0}</style>
+<h1>Rota Livre · Alertas ativos</h1><p>Painel local de triagem das ocorrências.</p><button id="atualizar">Atualizar alertas</button><p id="resumo" role="status"></p><ul id="lista"></ul>
+<script>
+async function atualizar(){
+ const lista=document.querySelector('#lista'), resumo=document.querySelector('#resumo');
+ lista.replaceChildren();
+ try{
+  const resposta=await fetch('alertas_ativos.json',{cache:'no-store'});
+  if(!resposta.ok) throw Error();
+  const dados=await resposta.json();
+  resumo.textContent=dados.alertas.length+' alerta(s) ativo(s). Atualização: '+new Date(dados.atualizado).toLocaleString('pt-BR');
+  for(const item of dados.alertas){
+   const linha=document.createElement('li');
+   linha.textContent=[item.category,item.status,item.lat+', '+item.lng].join(' · ');
+   lista.append(linha);
+  }
+ }catch{resumo.textContent='Dados indisponíveis. Execute o robô e atualize o painel.'}
+}
+document.querySelector('#atualizar').onclick=atualizar;atualizar();
+</script></html>
