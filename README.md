@@ -93,11 +93,17 @@ IDs ausentes, coordenadas não numéricas ou fora dos limites, categoria vazia e
 
 Arquivos ausentes, JSON inválido e raiz diferente de lista geram falha registrada. A escrita usa arquivo temporário e substituição. A retomada é uma nova execução com entrada corrigida. A auditoria precisa estar gravável; sem ela a execução falha. Não há controle de execuções concorrentes nem transação única entre arquivo final e log.
 
-## Segurança e publicação futura
+## Segurança e publicação
 
 Não publique exportações com dados reais ou credenciais. O exportador específico de RPA inclui somente ID, categoria, status, latitude e longitude; não inclui foto ou descrição. Os exemplos são fictícios. O `.gitignore` evita publicar exportação real e arquivos de execução; a pasta `docs` explica como produzi-los.
 
-Este pacote ainda NÃO foi publicado no GitHub. O vídeo ainda precisa ser gravado pela equipe. O relatório PDF anterior deve ser atualizado com a integração implementada e com os links finais antes da entrega.
+## Links da entrega
+
+- Repositório: https://github.com/HenriqueCuzato/rota-livre-rpa
+- Vídeo demonstrativo: https://youtu.be/WdjrOumpX98
+- MVP: https://rota-livre-henrique.sproutingchaff.chatgpt.site/
+
+O relatório PDF acompanha o pacote de entrega e inclui as evidências de testes e integração, além dos links acima.
 
 ## Evidências a registrar
 
